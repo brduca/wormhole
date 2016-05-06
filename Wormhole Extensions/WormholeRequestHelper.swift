@@ -10,12 +10,12 @@ import Foundation
 
 extension NSMutableURLRequest
 {
-    convenience init(route: Routes, dataObj: NSData?, headers: Dictionary<String, String>?, timeout: Double? = 60)
+    convenience init(url: Url, dataObj: NSData?, headers: Dictionary<String, String>?, timeout: Double? = 60)
     {
         self.init()
         
-        setUrl(route.url)
-        setMethod(route.method)
+        setUrl(url.route.route, params: url.queryStringParams)
+        setMethod(url.route.method)
         appendHeaders(headers)
         appendBody(dataObj)
         setTimeout(timeout!)
@@ -38,9 +38,10 @@ extension NSMutableURLRequest
        return task
     }
     
-    func setUrl(url:String)
+    func setUrl(route:String, params: NSDictionary?)
     {
-        self.URL = NSURL(string: url)!
+        var route = route
+        self.URL = NSURL(string: route.appendQueryString(params))!
     }
     
     func setMethod(method: HttpMethods)
@@ -55,7 +56,7 @@ extension NSMutableURLRequest
     
     func appendHeaders(headers: Dictionary<String, String>?)
     {
-        if headers?.count > 0 {return}
+        if !headers.exists {return}
         
         for (key, value) in headers!
         {
@@ -65,7 +66,7 @@ extension NSMutableURLRequest
     
     func appendBody(dataObj: NSData?)
     {
-        if dataObj == nil { return }
+        if !dataObj.exists { return }
         self.HTTPBody = dataObj
     }
 }

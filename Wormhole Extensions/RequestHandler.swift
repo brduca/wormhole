@@ -34,6 +34,7 @@ class GenericResponseHandler
                 {
                     self.sucess!(data)
                 }
+                return
             }
         }
     }

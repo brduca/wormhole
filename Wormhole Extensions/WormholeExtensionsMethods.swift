@@ -40,9 +40,31 @@ extension NSURLResponse
     }
 }
 
-postfix operator !! { }
-
-postfix func !! (left: NSURLSessionTask)
+extension String
 {
-    left.resume()
+    mutating func appendQueryString(dictionary: NSDictionary?) -> String
+    {
+        if !dictionary.exists {return self }
+        
+        var parts = [String]()
+        
+        for (key, value) in dictionary!
+        {
+            if ((value is String) && ((value as! String) != ""))
+            {
+                let encoded = value.stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())! as NSString
+                parts.append("\(key)=\(encoded)")
+                continue
+                
+            }
+            
+            if (value is Int || value is Double || value is Float)
+            {
+                parts.append("\(key)=\(value)")
+                continue
+            }
+        }
+        
+        return self + "?" + parts.joinWithSeparator("&")
+    }
 }

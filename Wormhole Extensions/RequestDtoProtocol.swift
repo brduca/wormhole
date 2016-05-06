@@ -9,18 +9,12 @@
 import Foundation
 import UIKit
 
-struct Routes
+extension Url
 {
-    let url: String
-    let method: HttpMethods
-}
-
-extension Routes
-{
-    func createRequest() -> GenericResponseHandler
+    func createRequest(withData data: NSData? = nil) -> GenericResponseHandler
     {
         let handler = GenericResponseHandler()
-        NSMutableURLRequest(route: self, dataObj: nil, headers: nil).continueWith(handler)
+        NSMutableURLRequest(url: self, dataObj: data, headers: nil).continueWith(handler)
         return handler
     }
 }
