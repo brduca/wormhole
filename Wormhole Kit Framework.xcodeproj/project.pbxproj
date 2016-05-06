@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D69186A1CDB538B003B9690 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6918691CDB538B003B9690 /* AppDelegate.swift */; };
+		3D69186C1CDB538B003B9690 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D69186B1CDB538B003B9690 /* ViewController.swift */; };
+		3D69186F1CDB538B003B9690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D69186D1CDB538B003B9690 /* Main.storyboard */; };
+		3D6918711CDB538B003B9690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6918701CDB538B003B9690 /* Assets.xcassets */; };
+		3D6918741CDB538B003B9690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6918721CDB538B003B9690 /* LaunchScreen.storyboard */; };
+		3D69187F1CDB538B003B9690 /* Wormhole_Kit_FrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D69187E1CDB538B003B9690 /* Wormhole_Kit_FrameworkTests.swift */; };
+		3D69188A1CDB538B003B9690 /* Wormhole_Kit_FrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6918891CDB538B003B9690 /* Wormhole_Kit_FrameworkUITests.swift */; };
+		3D6918AC1CDC9678003B9690 /* WormholeRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6918A61CDC9678003B9690 /* WormholeRequestHelper.swift */; };
+		3D6918AD1CDC9678003B9690 /* HttpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6918A71CDC9678003B9690 /* HttpStatus.swift */; };
+		3D6918AE1CDC9678003B9690 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6918A81CDC9678003B9690 /* RequestHandler.swift */; };
+		3D6918AF1CDC9678003B9690 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6918A91CDC9678003B9690 /* Reachability.swift */; };
+		3D6918B01CDC9678003B9690 /* RequestDtoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6918AA1CDC9678003B9690 /* RequestDtoProtocol.swift */; };
+		3D6918B11CDC9678003B9690 /* WormholeExtensionsMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6918AB1CDC9678003B9690 /* WormholeExtensionsMethods.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D69187B1CDB538B003B9690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D69185E1CDB538B003B9690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D6918651CDB538B003B9690;
+			remoteInfo = "Wormhole Kit Framework";
+		};
+		3D6918861CDB538B003B9690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D69185E1CDB538B003B9690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D6918651CDB538B003B9690;
+			remoteInfo = "Wormhole Kit Framework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D6918661CDB538B003B9690 /* Wormhole Kit Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wormhole Kit Framework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6918691CDB538B003B9690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D69186B1CDB538B003B9690 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D69186E1CDB538B003B9690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D6918701CDB538B003B9690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D6918731CDB538B003B9690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D6918751CDB538B003B9690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D69187A1CDB538B003B9690 /* Wormhole Kit FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wormhole Kit FrameworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D69187E1CDB538B003B9690 /* Wormhole_Kit_FrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wormhole_Kit_FrameworkTests.swift; sourceTree = "<group>"; };
+		3D6918801CDB538B003B9690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6918851CDB538B003B9690 /* Wormhole Kit FrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wormhole Kit FrameworkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6918891CDB538B003B9690 /* Wormhole_Kit_FrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wormhole_Kit_FrameworkUITests.swift; sourceTree = "<group>"; };
+		3D69188B1CDB538C003B9690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6918A61CDC9678003B9690 /* WormholeRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WormholeRequestHelper.swift; path = "Wormhole Extensions/WormholeRequestHelper.swift"; sourceTree = "<group>"; };
+		3D6918A71CDC9678003B9690 /* HttpStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpStatus.swift; path = "Wormhole Extensions/HttpStatus.swift"; sourceTree = "<group>"; };
+		3D6918A81CDC9678003B9690 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestHandler.swift; path = "Wormhole Extensions/RequestHandler.swift"; sourceTree = "<group>"; };
+		3D6918A91CDC9678003B9690 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = "Wormhole Extensions/Reachability.swift"; sourceTree = "<group>"; };
+		3D6918AA1CDC9678003B9690 /* RequestDtoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestDtoProtocol.swift; path = "Wormhole Extensions/RequestDtoProtocol.swift"; sourceTree = "<group>"; };
+		3D6918AB1CDC9678003B9690 /* WormholeExtensionsMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WormholeExtensionsMethods.swift; path = "Wormhole Extensions/WormholeExtensionsMethods.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D6918631CDB538B003B9690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6918771CDB538B003B9690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6918821CDB538B003B9690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D69185D1CDB538B003B9690 = {
+			isa = PBXGroup;
+			children = (
+				3D6918971CDB53CB003B9690 /* Wormhole Extensions */,
+				3D6918681CDB538B003B9690 /* Wormhole Kit Framework */,
+				3D69187D1CDB538B003B9690 /* Wormhole Kit FrameworkTests */,
+				3D6918881CDB538B003B9690 /* Wormhole Kit FrameworkUITests */,
+				3D6918671CDB538B003B9690 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D6918671CDB538B003B9690 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D6918661CDB538B003B9690 /* Wormhole Kit Framework.app */,
+				3D69187A1CDB538B003B9690 /* Wormhole Kit FrameworkTests.xctest */,
+				3D6918851CDB538B003B9690 /* Wormhole Kit FrameworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D6918681CDB538B003B9690 /* Wormhole Kit Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3D6918691CDB538B003B9690 /* AppDelegate.swift */,
+				3D69186B1CDB538B003B9690 /* ViewController.swift */,
+				3D69186D1CDB538B003B9690 /* Main.storyboard */,
+				3D6918701CDB538B003B9690 /* Assets.xcassets */,
+				3D6918721CDB538B003B9690 /* LaunchScreen.storyboard */,
+				3D6918751CDB538B003B9690 /* Info.plist */,
+			);
+			path = "Wormhole Kit Framework";
+			sourceTree = "<group>";
+		};
+		3D69187D1CDB538B003B9690 /* Wormhole Kit FrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D69187E1CDB538B003B9690 /* Wormhole_Kit_FrameworkTests.swift */,
+				3D6918801CDB538B003B9690 /* Info.plist */,
+			);
+			path = "Wormhole Kit FrameworkTests";
+			sourceTree = "<group>";
+		};
+		3D6918881CDB538B003B9690 /* Wormhole Kit FrameworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D6918891CDB538B003B9690 /* Wormhole_Kit_FrameworkUITests.swift */,
+				3D69188B1CDB538C003B9690 /* Info.plist */,
+			);
+			path = "Wormhole Kit FrameworkUITests";
+			sourceTree = "<group>";
+		};
+		3D6918971CDB53CB003B9690 /* Wormhole Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D6918A61CDC9678003B9690 /* WormholeRequestHelper.swift */,
+				3D6918A71CDC9678003B9690 /* HttpStatus.swift */,
+				3D6918A81CDC9678003B9690 /* RequestHandler.swift */,
+				3D6918A91CDC9678003B9690 /* Reachability.swift */,
+				3D6918AA1CDC9678003B9690 /* RequestDtoProtocol.swift */,
+				3D6918AB1CDC9678003B9690 /* WormholeExtensionsMethods.swift */,
+			);
+			name = "Wormhole Extensions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D6918651CDB538B003B9690 /* Wormhole Kit Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D69188E1CDB538C003B9690 /* Build configuration list for PBXNativeTarget "Wormhole Kit Framework" */;
+			buildPhases = (
+				3D6918621CDB538B003B9690 /* Sources */,
+				3D6918631CDB538B003B9690 /* Frameworks */,
+				3D6918641CDB538B003B9690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wormhole Kit Framework";
+			productName = "Wormhole Kit Framework";
+			productReference = 3D6918661CDB538B003B9690 /* Wormhole Kit Framework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D6918791CDB538B003B9690 /* Wormhole Kit FrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6918911CDB538C003B9690 /* Build configuration list for PBXNativeTarget "Wormhole Kit FrameworkTests" */;
+			buildPhases = (
+				3D6918761CDB538B003B9690 /* Sources */,
+				3D6918771CDB538B003B9690 /* Frameworks */,
+				3D6918781CDB538B003B9690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D69187C1CDB538B003B9690 /* PBXTargetDependency */,
+			);
+			name = "Wormhole Kit FrameworkTests";
+			productName = "Wormhole Kit FrameworkTests";
+			productReference = 3D69187A1CDB538B003B9690 /* Wormhole Kit FrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D6918841CDB538B003B9690 /* Wormhole Kit FrameworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6918941CDB538C003B9690 /* Build configuration list for PBXNativeTarget "Wormhole Kit FrameworkUITests" */;
+			buildPhases = (
+				3D6918811CDB538B003B9690 /* Sources */,
+				3D6918821CDB538B003B9690 /* Frameworks */,
+				3D6918831CDB538B003B9690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D6918871CDB538B003B9690 /* PBXTargetDependency */,
+			);
+			name = "Wormhole Kit FrameworkUITests";
+			productName = "Wormhole Kit FrameworkUITests";
+			productReference = 3D6918851CDB538B003B9690 /* Wormhole Kit FrameworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D69185E1CDB538B003B9690 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Salvador Mósca";
+				TargetAttributes = {
+					3D6918651CDB538B003B9690 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					3D6918791CDB538B003B9690 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3D6918651CDB538B003B9690;
+					};
+					3D6918841CDB538B003B9690 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3D6918651CDB538B003B9690;
+					};
+				};
+			};
+			buildConfigurationList = 3D6918611CDB538B003B9690 /* Build configuration list for PBXProject "Wormhole Kit Framework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D69185D1CDB538B003B9690;
+			productRefGroup = 3D6918671CDB538B003B9690 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D6918651CDB538B003B9690 /* Wormhole Kit Framework */,
+				3D6918791CDB538B003B9690 /* Wormhole Kit FrameworkTests */,
+				3D6918841CDB538B003B9690 /* Wormhole Kit FrameworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D6918641CDB538B003B9690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6918741CDB538B003B9690 /* LaunchScreen.storyboard in Resources */,
+				3D6918711CDB538B003B9690 /* Assets.xcassets in Resources */,
+				3D69186F1CDB538B003B9690 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6918781CDB538B003B9690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6918831CDB538B003B9690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D6918621CDB538B003B9690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D69186C1CDB538B003B9690 /* ViewController.swift in Sources */,
+				3D6918AE1CDC9678003B9690 /* RequestHandler.swift in Sources */,
+				3D6918B01CDC9678003B9690 /* RequestDtoProtocol.swift in Sources */,
+				3D6918B11CDC9678003B9690 /* WormholeExtensionsMethods.swift in Sources */,
+				3D6918AF1CDC9678003B9690 /* Reachability.swift in Sources */,
+				3D6918AC1CDC9678003B9690 /* WormholeRequestHelper.swift in Sources */,
+				3D69186A1CDB538B003B9690 /* AppDelegate.swift in Sources */,
+				3D6918AD1CDC9678003B9690 /* HttpStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6918761CDB538B003B9690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D69187F1CDB538B003B9690 /* Wormhole_Kit_FrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6918811CDB538B003B9690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D69188A1CDB538B003B9690 /* Wormhole_Kit_FrameworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D69187C1CDB538B003B9690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D6918651CDB538B003B9690 /* Wormhole Kit Framework */;
+			targetProxy = 3D69187B1CDB538B003B9690 /* PBXContainerItemProxy */;
+		};
+		3D6918871CDB538B003B9690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D6918651CDB538B003B9690 /* Wormhole Kit Framework */;
+			targetProxy = 3D6918861CDB538B003B9690 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D69186D1CDB538B003B9690 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D69186E1CDB538B003B9690 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D6918721CDB538B003B9690 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6918731CDB538B003B9690 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D69188C1CDB538C003B9690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D69188D1CDB538C003B9690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D69188F1CDB538C003B9690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wormhole Kit Framework/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duca.Wormhole-Kit-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D6918901CDB538C003B9690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wormhole Kit Framework/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duca.Wormhole-Kit-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D6918921CDB538C003B9690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wormhole Kit FrameworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duca.Wormhole-Kit-FrameworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wormhole Kit Framework.app/Wormhole Kit Framework";
+			};
+			name = Debug;
+		};
+		3D6918931CDB538C003B9690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wormhole Kit FrameworkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duca.Wormhole-Kit-FrameworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wormhole Kit Framework.app/Wormhole Kit Framework";
+			};
+			name = Release;
+		};
+		3D6918951CDB538C003B9690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Wormhole Kit FrameworkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duca.Wormhole-Kit-FrameworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wormhole Kit Framework";
+			};
+			name = Debug;
+		};
+		3D6918961CDB538C003B9690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Wormhole Kit FrameworkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.duca.Wormhole-Kit-FrameworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wormhole Kit Framework";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D6918611CDB538B003B9690 /* Build configuration list for PBXProject "Wormhole Kit Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D69188C1CDB538C003B9690 /* Debug */,
+				3D69188D1CDB538C003B9690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D69188E1CDB538C003B9690 /* Build configuration list for PBXNativeTarget "Wormhole Kit Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D69188F1CDB538C003B9690 /* Debug */,
+				3D6918901CDB538C003B9690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D6918911CDB538C003B9690 /* Build configuration list for PBXNativeTarget "Wormhole Kit FrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6918921CDB538C003B9690 /* Debug */,
+				3D6918931CDB538C003B9690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D6918941CDB538C003B9690 /* Build configuration list for PBXNativeTarget "Wormhole Kit FrameworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6918951CDB538C003B9690 /* Debug */,
+				3D6918961CDB538C003B9690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D69185E1CDB538B003B9690 /* Project object */;
+}
