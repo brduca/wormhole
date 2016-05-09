@@ -32,7 +32,7 @@ class RequestHandler
         task.resume()
     }
     
-    private func createProcess(responseHandler: (NSData?, NSURLResponse?, NSError?) -> Void)
+    private func createProcess()
     {
         let urlSession = NSURLSession.sharedSession()
         

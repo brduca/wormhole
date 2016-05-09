@@ -27,15 +27,6 @@ func * (left: Map, right: String) -> String
     return left.dictionary[right] as! String
 }
 
-
-/// Task starter operator
-postfix operator !! { }
-
-postfix func !! (left: NSURLSessionTask)
-{
-    left.resume()
-}
-
 func foo()
 {
     

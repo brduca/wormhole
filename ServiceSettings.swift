@@ -15,7 +15,7 @@ struct  ServiceSettings
 
 protocol ServiceProtocol
 {
-    var route: Routes {get set}
+     var route: Routes {get set}
 }
 
 extension ServiceProtocol
@@ -28,10 +28,10 @@ extension ServiceProtocol
 
 struct Service<T:ServiceProtocol>
 {
-    func build(params params:NSDictionary? = nil) -> RequestHandler
+    func build<S:Serialize>(params params:NSDictionary? = nil, data: S? = nil) -> RequestHandler
     {
         let url : Url = Url(route: T().route, queryStringParams: params)
-        let request = url.buildRequest()
+        let request = url.buildRequest(withData: data?.toJson())
         return RequestHandler(request:request)
     }
 }
