@@ -10,7 +10,7 @@ import Foundation
 
 struct  ServiceSettings
 {
-    static let create = Routes(route: "", method: HttpMethods.GET)
+    static let create = Routes(route: "baseRouteExample", method: HttpMethods.GET)
 }
 
 protocol ServiceProtocol
@@ -20,8 +20,18 @@ protocol ServiceProtocol
 
 extension ServiceProtocol
 {
-    func to(params: NSDictionary? = nil) -> Url
+    init()
     {
-        return Url(route: route, queryStringParams: params)
+        self.init()
+    }
+}
+
+struct Service<T:ServiceProtocol>
+{
+    func build(params params:NSDictionary? = nil) -> RequestHandler
+    {
+        let url : Url = Url(route: T().route, queryStringParams: params)
+        let request = url.buildRequest()
+        return RequestHandler(request:request)
     }
 }

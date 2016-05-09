@@ -26,7 +26,6 @@ extension Optional
     }
 }
 
-
 extension NSURLResponse
 {
     func isHTTPResponseValid() -> Bool

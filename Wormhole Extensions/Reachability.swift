@@ -39,7 +39,7 @@ public class Reachability
     
     class func startNotifier()
     {
-        let queue = dispatch_queue_create("invine.background.thread", nil)
+        let queue = dispatch_queue_create("wormhole.background.thread", nil)
         timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue)
         
         dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 1 * NSEC_PER_SEC)

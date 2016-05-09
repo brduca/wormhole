@@ -16,6 +16,12 @@ func * (left: Map, right: String) -> Int
     return left.dictionary[right] as! Int
 }
 
+func * (left: Map, right: String) -> Int?
+{
+    return left.dictionary[right] as? Int
+}
+
+
 func * (left: Map, right: String) -> String
 {
     return left.dictionary[right] as! String

@@ -12,13 +12,37 @@ typealias successCompletionHandler = (NSData?) -> Void
 typealias failCompletionHandler = (HttpStatus, String?) -> Void
 typealias alwaysCompletionHandler = () -> Void
 
-class GenericResponseHandler
+class RequestHandler
 {
+    // Response handlers
     private var sucess: successCompletionHandler?
     private var fail: failCompletionHandler?
     private var always: alwaysCompletionHandler?
     
-    func genericResponseHandler(data: NSData?, response: NSURLResponse?, error: NSError?)
+    private var request: NSURLRequest!
+    private var task: NSURLSessionTask!
+    
+    init(request: NSURLRequest)
+    {
+        self.request = request
+    }
+    
+    func call()
+    {
+        task.resume()
+    }
+    
+    private func createProcess(responseHandler: (NSData?, NSURLResponse?, NSError?) -> Void)
+    {
+        let urlSession = NSURLSession.sharedSession()
+        
+        task = urlSession.dataTaskWithRequest(request!){ data, response, error in
+            
+            self.genericResponseHandler(data, response: response, error: error)
+        }
+    }
+    
+    private func genericResponseHandler(data: NSData?, response: NSURLResponse?, error: NSError?)
     {
         dispatch_async(dispatch_get_main_queue())
         {
@@ -40,21 +64,21 @@ class GenericResponseHandler
     }
 }
 
-extension GenericResponseHandler
+extension RequestHandler
 {
-    func success(handler: successCompletionHandler) -> GenericResponseHandler
+    func success(handler: successCompletionHandler) -> RequestHandler
     {
         self.sucess = handler
         return self
     }
     
-    func fail(handler: failCompletionHandler) -> GenericResponseHandler
+    func fail(handler: failCompletionHandler) -> RequestHandler
     {
         self.fail = handler
         return self
     }
 
-    func always(handler: alwaysCompletionHandler) -> GenericResponseHandler
+    func always(handler: alwaysCompletionHandler) -> RequestHandler
     {
         self.always = handler
         return self

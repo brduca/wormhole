@@ -20,24 +20,7 @@ extension NSMutableURLRequest
         appendBody(dataObj)
         setTimeout(timeout!)
     }
-    
-    func continueWith(genericHandler: GenericResponseHandler) -> NSURLSessionTask
-    {
-        return self.createProcess(genericHandler.genericResponseHandler)
-    }
-    
-    internal func createProcess(responseHandler: (NSData?, NSURLResponse?, NSError?) -> Void) -> NSURLSessionTask
-    {
-        let urlSession = NSURLSession.sharedSession()
         
-        let task = urlSession.dataTaskWithRequest(self){ data, response, error in
-            
-            responseHandler(data, response, error)
-        }
-        
-       return task
-    }
-    
     func setUrl(route:String, params: NSDictionary?)
     {
         var route = route
