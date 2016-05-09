@@ -10,7 +10,7 @@ import Foundation
 
 extension NSMutableURLRequest
 {
-    convenience init(url: Url, dataObj: NSData?, headers: Dictionary<String, String>?, timeout: Double? = 60)
+    convenience init(url: Url, dataObj: NSData?, headers: Dictionary<String, String>?)
     {
         self.init()
         
@@ -18,9 +18,9 @@ extension NSMutableURLRequest
         setMethod(url.route.method)
         appendHeaders(headers)
         appendBody(dataObj)
-        setTimeout(timeout!)
+        setTimeout(GlobalServiceSettings.serviceTimeout)
     }
-        
+    
     func setUrl(route:String, params: NSDictionary?)
     {
         var route = route

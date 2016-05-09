@@ -8,6 +8,11 @@
 
 import Foundation
 
+struct  GlobalServiceSettings
+{
+    static var serviceTimeout:Double = 60
+}
+
 struct  ServiceSettings
 {
     static let create = Routes(route: "baseRouteExample", method: HttpMethods.GET)
