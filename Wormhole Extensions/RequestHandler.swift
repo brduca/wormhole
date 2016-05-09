@@ -20,7 +20,6 @@ class RequestHandler
     private var always: alwaysCompletionHandler?
     
     private var request: NSURLRequest!
-    private var task: NSURLSessionTask!
     
     init(request: NSURLRequest)
     {
@@ -29,17 +28,19 @@ class RequestHandler
     
     func call()
     {
-        task.resume()
+        createProcess().resume()
     }
     
-    private func createProcess()
+    private func createProcess() -> NSURLSessionTask
     {
         let urlSession = NSURLSession.sharedSession()
         
-        task = urlSession.dataTaskWithRequest(request!){ data, response, error in
+        let task = urlSession.dataTaskWithRequest(request!){ data, response, error in
             
             self.genericResponseHandler(data, response: response, error: error)
         }
+        
+        return task
     }
     
     private func genericResponseHandler(data: NSData?, response: NSURLResponse?, error: NSError?)
