@@ -17,7 +17,7 @@
                BlueprintIdentifier = "3D6918651CDB538B003B9690"
                BuildableName = "Wormhole Kit Framework.app"
                BlueprintName = "Wormhole Kit Framework"
-               ReferencedContainer = "container:Wormhole Kit Framework.xcodeproj">
+               ReferencedContainer = "container:WormholeKitFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3D6918791CDB538B003B9690"
-               BuildableName = "Wormhole Kit FrameworkTests.xctest"
-               BlueprintName = "Wormhole Kit FrameworkTests"
-               ReferencedContainer = "container:Wormhole Kit Framework.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3D6918841CDB538B003B9690"
-               BuildableName = "Wormhole Kit FrameworkUITests.xctest"
-               BlueprintName = "Wormhole Kit FrameworkUITests"
-               ReferencedContainer = "container:Wormhole Kit Framework.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -55,7 +35,7 @@
             BlueprintIdentifier = "3D6918651CDB538B003B9690"
             BuildableName = "Wormhole Kit Framework.app"
             BlueprintName = "Wormhole Kit Framework"
-            ReferencedContainer = "container:Wormhole Kit Framework.xcodeproj">
+            ReferencedContainer = "container:WormholeKitFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -71,16 +51,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3D6918651CDB538B003B9690"
             BuildableName = "Wormhole Kit Framework.app"
             BlueprintName = "Wormhole Kit Framework"
-            ReferencedContainer = "container:Wormhole Kit Framework.xcodeproj">
+            ReferencedContainer = "container:WormholeKitFramework.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,16 +69,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3D6918651CDB538B003B9690"
             BuildableName = "Wormhole Kit Framework.app"
             BlueprintName = "Wormhole Kit Framework"
-            ReferencedContainer = "container:Wormhole Kit Framework.xcodeproj">
+            ReferencedContainer = "container:WormholeKitFramework.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
