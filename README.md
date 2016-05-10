@@ -3,4 +3,4 @@
 Simple swift framework to handle http calls
 
 ####Master branch build status: 
-![](https://travis-ci.org/brduca/Wormhole Kit Framework.svg?branch=master)
+![](https://api.travis-ci.org/brduca/wormhole.svg?branch=master)
